@@ -38,37 +38,49 @@ def cold_drinks():
     print("5. Coke".ljust(20, ".") + "1.5$")
     print("6. Iced Tea".ljust(20, ".") + "2$")
 
+def Beverages():
+    title = "Beverages".upper()
+    print(title.center(30, "="))
+    print("7. Beer".ljust(20, ".") + "1.2$")
+    print("8. Vodka".ljust(20, ".") + "2$")
+
+def Wines():
+    title = "Wines".upper()
+    print(title.center(30, "="))
+    print("9. Red Wine".ljust(20, ".") + "1.2$")
+    print("10. White Wine".ljust(20, ".") + "2$")
+
 # Dessert options
 def dessert():
     title = "Dessert".upper()
     print(title.center(30, "="))
-    print("7. Ice cream".ljust(20, ".") + "1.5$")
-    print("8. Cheese Cake".ljust(20, ".") + "3$")
+    print("11. Ice cream".ljust(20, ".") + "1.5$")
+    print("12. Cheese Cake".ljust(20, ".") + "3$")
 
 # Fish dishes
 def fish_dishes():
     title = "Fish Dishes".upper()
     print(title.center(30, "="))
-    print("9. Grilled Salmon".ljust(20, ".") + "12$")
-    print("10. Fish Tacos".ljust(20, ".") + "10$")
-    print("11. Shrimp Pasta".ljust(20, ".") + "14$")
+    print("13. Grilled Salmon".ljust(20, ".") + "12$")
+    print("14. Fish Tacos".ljust(20, ".") + "10$")
+    print("15. Shrimp Pasta".ljust(20, ".") + "14$")
 
 # Meat dishes
 def meat_dishes():
     title = "Meat Dishes".upper()
     print(title.center(30, "="))
-    print("12. Steak".ljust(20, ".") + "15$")
-    print("13. Chicken Parmesan".ljust(20, ".") + "13$")
-    print("14. Beef Burger".ljust(20, ".") + "11$")
-    print("15. Pork Chops".ljust(20, ".") + "15$")
+    print("16. Steak".ljust(20, ".") + "15$")
+    print("17. Chicken Parmesan".ljust(20, ".") + "13$")
+    print("18. Beef Burger".ljust(20, ".") + "11$")
+    print("19. Pork Chops".ljust(20, ".") + "15$")
 
 def side_dishes():
     title = "Side Dishes".upper()
     print(title.center(30, "="))
-    print("16. Rice".ljust(20, ".") + "1$")
-    print("17. Fries".ljust(20, ".") + "1$")
-    print("18. Salad".ljust(20, ".") + "1$")
-    print("19. ".ljust(20, ".") + "1$")
+    print("20. Rice".ljust(20, ".") + "1$")
+    print("21. Fries".ljust(20, ".") + "1$")
+    print("21. Salad".ljust(20, ".") + "1$")
+    print("23 Sweet Potato. ".ljust(20, ".") + "1$")
 
 # Customer choices
 def get_choice():
@@ -77,10 +89,10 @@ def get_choice():
         choice = input("Enter the number of your choice (or 'done' to finish): ")
         if choice.lower() == 'done':
             break
-        elif choice.isdigit() and 1 <= int(choice) <= 15:
+        elif choice.isdigit() and 1 <= int(choice) <= 23:
             choices.append(int(choice))
         else:
-            print("Invalid choice. Please enter a number from 1 to 15, or 'done' to finish.")
+            print("Invalid choice. Please enter a number from 1 to 23, or 'done' to finish.")
     return choices
 
 # Map choices to menu items and prices
