@@ -11,6 +11,12 @@ def menu():
     # Display cold drinks options
     cold_drinks()
 
+    # Display Beverages options
+    Beverages()
+
+    # Display Wines options
+    Wines()
+
     # Display dessert options
     dessert()
 
@@ -42,13 +48,13 @@ def Beverages():
     title = "Beverages".upper()
     print(title.center(30, "="))
     print("7. Beer".ljust(20, ".") + "1.2$")
-    print("8. Vodka".ljust(20, ".") + "2$")
+    print("8. Gin".ljust(20, ".") + "2$")
 
 def Wines():
     title = "Wines".upper()
     print(title.center(30, "="))
-    print("9. Red Wine".ljust(20, ".") + "1.2$")
-    print("10. White Wine".ljust(20, ".") + "2$")
+    print("9. Bottle Red Wine".ljust(20, ".") + "35$")
+    print("10. White Wine".ljust(20, ".") + "30$")
 
 # Dessert options
 def dessert():
